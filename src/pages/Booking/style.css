@@ -1,0 +1,35 @@
+.button-section {
+  /* display: "flex", marginBottom: "20px", columnGap: "10px" */
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  column-gap: 37px;
+}
+.button-section button {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: 1px solid grey;
+}
+.button-section button:focus {
+  background: blue;
+}
+.footer {
+  display: flex;
+  position: absolute;
+  column-gap: 37px;
+  bottom: 25px;
+  /* border: 1px solid red; */
+  padding: 0 10px;
+}
+.btn-select {
+  height: 40px;
+  background-color: #605dec;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
+  width: 255px;
+}
+.dropdown {
+  width: 80px;
+}

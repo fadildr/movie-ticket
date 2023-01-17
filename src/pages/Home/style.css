@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  column-count: 2;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* border: 1px solid red; */
+  padding: 10px 0;
+}
+.column {
+  margin-top: 20px;
+  /* display: flex; */
+}
+.column p {
+  height: 100%;
+  /* border: 1px solid red; */
+}
+.img-card {
+  width: 100%;
+}
