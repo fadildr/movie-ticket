@@ -3,20 +3,29 @@
 }
 
 .row {
-  column-count: 2;
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* border: 1px solid red; */
+  grid-template-columns: auto auto;
+  display: grid;
+  padding: 40px 0;
   padding: 10px 0;
+  column-gap: 20px;
 }
 .column {
   margin-top: 20px;
-  /* display: flex; */
+  border: 1px solid black;
+  height: 300px;
 }
 .column p {
   height: 100%;
   /* border: 1px solid red; */
 }
 .img-card {
+  width: 100%;
+}
+.btn-history {
+  height: 40px;
+  background-color: #605dec;
+  color: white;
+  border-color: white;
+  border-radius: 10px;
   width: 100%;
 }

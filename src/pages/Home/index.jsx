@@ -13,12 +13,13 @@ export default function Home() {
     const result = await axios.get(
       "http://www.omdbapi.com/?apikey=31ccf49&s=batman"
     );
-
+    console.log(result);
     setData(result.data.Search);
   };
   const getDetailMovie = (id) => {
     navigate(`/detail/${id}`);
   };
+
   return (
     <div>
       <div className="container">
@@ -46,6 +47,15 @@ export default function Home() {
             </div>
           )}
         </div>
+        <button
+          type="button"
+          className="btn-history"
+          onClick={() => {
+            navigate("/history");
+          }}
+        >
+          History
+        </button>
       </div>
     </div>
   );

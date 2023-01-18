@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
+import Back from "../../components/backButton";
 import "./style.css";
 export default function Detail() {
   const { id } = useParams();
@@ -14,7 +15,7 @@ export default function Detail() {
     const result = await axios.get(
       `http://www.omdbapi.com/?apikey=31ccf49&i=${id}`
     );
-    console.log(result);
+
     setData(result.data);
   };
   const handleBooking = () => {
@@ -27,7 +28,7 @@ export default function Detail() {
   return (
     <div>
       <div>
-        <p onClick={() => navigate(-1)}>back</p>
+        <Back />
         <img
           src={data.Poster}
           alt=""
